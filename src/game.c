@@ -1,4 +1,6 @@
 #include <SDL.h>
+#include "simple_logger.h"
+
 #include "gf2d_graphics.h"
 #include "gf2d_sprite.h"
 #include "simple_logger.h"
@@ -20,7 +22,7 @@ int main(int argc, char * argv[])
     Color mouseColor = gfc_color8(255,100,255,200);
     
     /*program initializtion*/
-    init_logger("gf2d.log");
+    init_logger("gf2d.log",0);
     slog("---==== BEGIN ====---");
     gf2d_graphics_initialize(
         "gf2d",
