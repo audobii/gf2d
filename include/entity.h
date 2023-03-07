@@ -11,9 +11,13 @@ typedef struct Entity_S
     Bool    _inuse;
     Sprite *sprite;
     float   frame;
+    Vector2D drawOffset;
+
     Vector2D position;
     Vector2D velocity;
     Vector2D acceleration;
+
+    
     
     void (*think)(struct Entity_S *self);
 }Entity;
